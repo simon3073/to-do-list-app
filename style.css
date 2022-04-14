@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap");
 body {
   font: normal normal 15px/18px 'Open Sans', sans-serif;
   background-image: url("app_bg.svg");
@@ -15,11 +15,19 @@ body {
   box-shadow: 7px 7px 1px #958aa3;
 }
 
+.container .fa-clipboard-list {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+}
+
 .container h2 {
   font-family: 'Noto Sans', sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
   margin-top: 10px;
+  text-align: center;
 }
 
 .container p {
@@ -51,7 +59,7 @@ form input:focus {
   position: relative;
   padding: 0.5em 2em 0.75em 2em;
   font-size: 16px;
-  height: 12px;
+  height: 11px;
   letter-spacing: 0.2em;
   text-align: center;
   text-transform: uppercase;
@@ -103,32 +111,42 @@ form input:focus {
 }
 
 ol {
-  padding-left: 20px;
+  padding: 10px 0 0 20px;
 }
 
 ol li {
   padding: 5px;
   color: #000;
+  font-family: 'Nuto-Sans', sans-serif;
+}
+
+ol li:hover {
+  cursor: pointer;
+}
+
+ol li .fa-xmark {
+  background: none;
+  float: right;
+  color: #012127;
+  font-weight: bold;
+  margin-right: 4px;
+  font-size: 1.35rem;
+}
+
+ol li .fa-xmark:hover {
+  color: red;
 }
 
 ol .delete {
   display: none;
 }
 
-ol:nth-child(even) {
-  background: #dfdfdf;
+ol :nth-child(odd) {
+  background: #d4cfed;
 }
 
-ol:hover {
-  cursor: pointer;
-}
-
-ol > crossOutButton {
-  background: none;
-  border: none;
-  float: right;
-  color: #025f70;
-  font-weight: 800;
+ol :nth-child(even) {
+  background: #bfbad6;
 }
 
 .strike {
