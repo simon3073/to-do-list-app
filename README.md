@@ -11,7 +11,7 @@ Developer: Simon Bertoli
 - HTML5
 - CSS
 - jQuery
-- FontAwseom
+- FontAwseome
 
 <br/>
 
